@@ -28,7 +28,7 @@
             <img class="h-6 ml-2" src="./assets/heart.png" alt="Heart">
          </div>    
          <div class="flex bg-green-100 px-6 py-2 rounded-3xl">
-            <span id="coin-count">100</span>
+            <span id="total-coins">100</span>
             <img class="h-6 ml-2" src="./assets/coin.png" alt="">
          </div>
          <div class="flex bg-green-600 px-6 py-2 rounded-3xl text-white">
@@ -71,7 +71,7 @@
          <div class="flex gap-1">
             <button class="btn btn-soft w-1/2 rounded-xl bg-white"><i class="fa-regular fa-copy"></i>Copy</button>
                
-            <button class="btn bg-green-600 text-white px-8 rounded-xl w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+            <button class="btn bg-green-600 text-white px-8 rounded-xl w-1/2 call-Button" data-name="National Emergency Number" data-number="999"><i class="fa-solid fa-phone"></i>Call</button>
 
          </div>         
       </div>
@@ -89,9 +89,9 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-500 mb-4">Police</span>
          </div>
          <div class="flex gap-1">
-            <button class="btn btn-soft w-1/2 rounded-xl bg-white"><i class="fa-regular fa-copy"></i>Copy</button>
+            <button class="btn btn-soft w-1/2 rounded-xl bg-white" data-number="999"><i class="fa-regular fa-copy"></i>Copy</button>
                
-            <button class="btn bg-green-600 text-white px-8 rounded-xl w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+            <button class="btn bg-green-600 text-white px-8 rounded-xl w-1/2 call-Button" data-name="Police Helpline Number" data-number="999"><i class="fa-solid fa-phone"></i>Call</button>
 
          </div>
       </div>
@@ -110,9 +110,9 @@
             <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-xs font-semibold text-gray-500 mb-4">Fire</span>
             </div>
             <div class="flex gap-1">
-               <button class="btn btn-soft px-8 rounded-xl bg-white w-1/2"><i class="fa-regular fa-copy"></i>Copy</button>
+               <button class="btn btn-soft px-8 rounded-xl bg-white w-1/2" data-number="999"><i class="fa-regular fa-copy"></i>Copy</button>
                
-               <button class="btn bg-green-600 text-white px-8 rounded-xl w-1/2"><i class="fa-solid fa-phone"></i>Call</button>
+               <button class="btn bg-green-600 text-white px-8 rounded-xl w-1/2 call-Button" data-name="Fire Service Number" data-number="999"><i class="fa-solid fa-phone"></i>Call</button>
 
             </div>
       </div>
@@ -139,7 +139,7 @@
 
       <!-- card-05 -->
 
-      <div class="rounded-lg p-4 bg-white">
+      <div class="rounded-lg p-4 bg-white card">
          <div class="flex justify-between mb-2">
             <img class="h-10 rounded-lg p-2 bg-red-100" src="./assets/emergency.png" alt="">
             <i class="fa-regular fa-heart text-gray-500"></i>
@@ -161,7 +161,7 @@
 
       <!-- card_06 -->
 
-      <div class="rounded-lg p-4 bg-white">            
+      <div class="rounded-lg p-4 bg-white card">            
          <div class="flex justify-between mb-2">
             <img class="h-10 rounded-lg p-2 bg-red-100" src="./assets/emergency.png" alt="">
             <i class="fa-regular fa-heart text-gray-500"></i>
@@ -184,7 +184,7 @@
 
       <!-- card_07 -->
 
-      <div class="rounded-lg p-4 bg-white">            
+      <div class="rounded-lg p-4 bg-white card">            
          <div class="flex justify-between mb-2">
             <img class="h-10 rounded-lg p-2 bg-red-100" src="./assets/emergency.png" alt="">
             <i class="fa-regular fa-heart text-gray-500"></i>
@@ -206,7 +206,7 @@
 
       <!-- card_08 -->
 
-      <div class="rounded-lg p-4 bg-white"> 
+      <div class="rounded-lg p-4 bg-white card"> 
          <div class="flex justify-between mb-2">
             <img class="h-10 rounded-lg p-2 bg-red-100" src="./assets/emergency.png" alt="">
             <i class="fa-regular fa-heart text-gray-500"></i>
@@ -230,7 +230,7 @@
 
       <!-- card_09 -->
 
-      <div class="rounded-lg p-4 bg-white">            
+      <div class="rounded-lg p-4 bg-white card">            
          <div class="flex justify-between mb-2">
             <img class="h-10 rounded-lg p-2 bg-red-100" src="./assets/emergency.png" alt="">
             <i class="fa-regular fa-heart text-gray-500"></i>
@@ -266,7 +266,7 @@
          </div>
 
          <div id="history">
-
+            
          </div>
       </div>
 
