@@ -38,6 +38,8 @@ for (let i = 0; i < callButton.length; i++) {
       let historyBox = document.createElement("div");
       historyBox.classList.add("flex", "justify-between", "bg-gray-100", "p-2", "rounded", "mb-2");
 
+      // New div append
+
       let newDiv = document.createElement("div");
 
       let h2 = document.createElement("h2");
@@ -65,16 +67,26 @@ for (let i = 0; i < callButton.length; i++) {
 
 const copyButton = document.querySelectorAll(".btn-soft");
 
-let copyCounter = document.getElementById("copy");
-let copyElement = parseInt(copyCounter.innerText);
+let copyElement = document.getElementById("copy");
+let copyCount = parseInt(copyElement.innerText);
 
 copyButton.forEach(function (Button) {
    Button.addEventListener("click",function () {
       let serviceNumber = this.getAttribute('data-number');
       console.log(serviceNumber);
+
       
-   })
-})
+      navigator.clipboard.writeText(serviceNumber).then(() => {
+         copyCount++;
+         copyElement.innerText= copyCount;
+         alert("Number Copied: " + serviceNumber)
+      })
+      .catch((err) => {
+         console.error("Failed to copy", err);
+      });
+      
+   });
+});
 
 
 
